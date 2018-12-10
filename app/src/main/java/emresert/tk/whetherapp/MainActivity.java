@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     String provider;
     static double lat, lng;
     OpenWeatherMap openWeatherMap ;
-
+    TextView t;
 
     int MY_PERMISSION =0;
 
@@ -45,6 +46,32 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+        t=(TextView) findViewById(R.id.txtCity);
+        Typeface myCustomFont=Typeface.createFromAsset(getAssets(),"fonts/Raleway-ExtraBold.ttf");
+        t.setTypeface(myCustomFont);
+
+        t=(TextView) findViewById(R.id.txtDescription);
+        Typeface myCustomFont2=Typeface.createFromAsset(getAssets(),"fonts/Raleway-ExtraBold.ttf");
+        t.setTypeface(myCustomFont2);
+
+        t=(TextView) findViewById(R.id.txtLastUpdate);
+        Typeface myCustomFont3=Typeface.createFromAsset(getAssets(),"fonts/Raleway-Thin.ttf");
+        t.setTypeface(myCustomFont3);
+
+        t=(TextView) findViewById(R.id.txtHumidity);
+        Typeface myCustomFont4=Typeface.createFromAsset(getAssets(),"fonts/Raleway-ExtraBold.ttf");
+        t.setTypeface(myCustomFont4);
+
+        t=(TextView) findViewById(R.id.txtTime);
+        Typeface myCustomFont5=Typeface.createFromAsset(getAssets(),"fonts/Raleway-ExtraBold.ttf");
+        t.setTypeface(myCustomFont5);
+
+        t=(TextView) findViewById(R.id.txtCelsius);
+        Typeface myCustomFont6=Typeface.createFromAsset(getAssets(),"fonts/Raleway-ExtraBold.ttf");
+        t.setTypeface(myCustomFont6);
 
         openWeatherMap = new OpenWeatherMap();
         //Control

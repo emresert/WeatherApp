@@ -6,17 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/sp"
+    >
 
     <TextView
         android:id="@+id/txtCity"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="130dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
         android:textStyle="bold"
         android:textSize="36sp"
         android:gravity="center"
+        android:textColor="#FFF"
         />
     <TextView
         android:id="@+id/txtLastUpdate"
@@ -26,6 +29,7 @@
         android:textStyle="bold"
         android:textSize="18sp"
         android:gravity="center"
+        android:textColor="#FFF"
         />
     <ImageView
         android:layout_width="100dp"
@@ -39,8 +43,10 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textStyle="bold"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:gravity="center"
+        android:textColor="#c0c91d"
+        android:layout_marginTop="5dp"
         />
     <TextView
         android:id="@+id/txtHumidity"
@@ -48,8 +54,12 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textStyle="bold"
-        android:textSize="18sp"
+        android:textSize="23sp"
         android:gravity="center"
+        android:textColor="#FFF"
+        android:layout_marginTop="10dp"
+
+
         />
     <TextView
         android:id="@+id/txtTime"
@@ -57,16 +67,23 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textStyle="bold"
-        android:textSize="18sp"
+        android:textSize="23sp"
         android:gravity="center"
+        android:textColor="#FFF"
+
+
         />
+
     <TextView
         android:id="@+id/txtCelsius"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""
-        android:textStyle="bold"
-        android:textSize="18sp"
         android:gravity="center"
+        android:text=""
+        android:layout_marginTop="15dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+
         />
 </LinearLayout>
